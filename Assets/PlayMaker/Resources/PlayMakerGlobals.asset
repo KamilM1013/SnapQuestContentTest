@@ -36,3 +36,9 @@ MonoBehaviour:
   - StartInteract
   - Key2Found
   - Key1Found
+  - ActivateObelisk
+  - Activate Obelisk
+  - Obelisk1Solved
+  - Obelisk2Solved
+  - Obelisk3Solved
+  - OpenDoor
