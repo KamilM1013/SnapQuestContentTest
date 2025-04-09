@@ -12297,7 +12297,6 @@ GameObject:
   - component: {fileID: 433853573}
   - component: {fileID: 433853572}
   - component: {fileID: 433853571}
-  - component: {fileID: 433853570}
   m_Layer: 11
   m_Name: Capsule
   m_TagString: Untagged
@@ -12320,23 +12319,6 @@ Transform:
   m_Father: {fileID: 1331125905}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &433853570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433853568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 6
-  precomputeOutline: 0
-  bakeKeys: []
-  BakeValues: []
 --- !u!114 &433853571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13384,7 +13366,7 @@ MonoBehaviour:
   IsInteractable: 0
   EventListenerFsm: {fileID: 433853571}
   Outlines:
-  - {fileID: 433853570}
+  - {fileID: 1331125906}
 --- !u!136 &433853573
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16249,7 +16231,6 @@ GameObject:
   - component: {fileID: 710246047}
   - component: {fileID: 710246046}
   - component: {fileID: 710246045}
-  - component: {fileID: 710246044}
   m_Layer: 11
   m_Name: Capsule
   m_TagString: Untagged
@@ -16272,23 +16253,6 @@ Transform:
   m_Father: {fileID: 1877358826}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &710246044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 710246042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 6
-  precomputeOutline: 0
-  bakeKeys: []
-  BakeValues: []
 --- !u!114 &710246045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17336,7 +17300,7 @@ MonoBehaviour:
   IsInteractable: 0
   EventListenerFsm: {fileID: 710246045}
   Outlines:
-  - {fileID: 710246044}
+  - {fileID: 1877358827}
 --- !u!136 &710246047
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22867,6 +22831,7 @@ GameObject:
   - component: {fileID: 830470897}
   - component: {fileID: 830470896}
   - component: {fileID: 830470895}
+  - component: {fileID: 830470901}
   m_Layer: 0
   m_Name: Obelisk_Key
   m_TagString: Untagged
@@ -22958,6 +22923,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &830470901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830470894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  BakeValues: []
 --- !u!1 &835184674
 GameObject:
   m_ObjectHideFlags: 0
@@ -28819,7 +28801,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35734
+  m_Name: pb_Mesh33052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29828,25 +29810,15 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.SendEvent
-        - HutongGames.PlayMaker.Actions.PlaySound
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: 5e69bb049cdc3905
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 5e69bb04
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 1084250909}
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -29886,14 +29858,7 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
-        fsmObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          typeName: UnityEngine.AudioClip
-          value: {fileID: 8300000, guid: 6b2a6792f21bf634491b5261c9248ec1, type: 3}
+        fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
@@ -29904,22 +29869,10 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
+        fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
@@ -29930,18 +29883,14 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000140000001c000000180000000f000000
+        paramDataType: 1f000000170000000f00000001000000
         paramName:
         - eventTarget
         - sendEvent
         - delay
         - everyFrame
-        - gameObject
-        - position
-        - clip
-        - volume
-        paramDataPos: 0000000000000000000000000000000000000000000000000000000001000000
-        paramByteDataSize: 0000000000000000000000000100000000000000000000000000000000000000
+        paramDataPos: 00000000000000000000000000000000
+        paramByteDataSize: 00000000000000000000000001000000
     - name: AreAllSolved
       description: 
       colorIndex: 0
@@ -31360,7 +31309,6 @@ GameObject:
   - component: {fileID: 1209434898}
   - component: {fileID: 1209434897}
   - component: {fileID: 1209434896}
-  - component: {fileID: 1209434895}
   m_Layer: 11
   m_Name: Capsule
   m_TagString: Untagged
@@ -31383,23 +31331,6 @@ Transform:
   m_Father: {fileID: 830470900}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1209434895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1209434893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineWidth: 6
-  precomputeOutline: 0
-  bakeKeys: []
-  BakeValues: []
 --- !u!114 &1209434896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32447,7 +32378,7 @@ MonoBehaviour:
   IsInteractable: 0
   EventListenerFsm: {fileID: 1209434896}
   Outlines:
-  - {fileID: 1209434895}
+  - {fileID: 830470901}
 --- !u!136 &1209434898
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -32902,6 +32833,7 @@ GameObject:
   - component: {fileID: 1331125902}
   - component: {fileID: 1331125901}
   - component: {fileID: 1331125900}
+  - component: {fileID: 1331125906}
   m_Layer: 0
   m_Name: Obelisk_Crosshair
   m_TagString: Untagged
@@ -32993,6 +32925,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1331125906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331125899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  BakeValues: []
 --- !u!1 &1339806499
 GameObject:
   m_ObjectHideFlags: 0
@@ -36943,7 +36892,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35818
+  m_Name: pb_Mesh33120
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38655,6 +38604,7 @@ GameObject:
   - component: {fileID: 1877358823}
   - component: {fileID: 1877358822}
   - component: {fileID: 1877358821}
+  - component: {fileID: 1877358827}
   m_Layer: 0
   m_Name: Obelisk_PowerOn
   m_TagString: Untagged
@@ -38746,6 +38696,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1877358827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877358820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 6
+  precomputeOutline: 0
+  bakeKeys: []
+  BakeValues: []
 --- !u!1 &1879104122
 GameObject:
   m_ObjectHideFlags: 0
@@ -39373,8 +39340,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 60
+        y: 98
         width: 100
         height: 16
       isBreakpoint: 0
@@ -39420,13 +39387,88 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: State 5
+    - name: IsOpen
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 177.125
-        y: 98.5
+        x: 207.125
+        y: 101.5
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: No
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Open
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a4c8bf00
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: IsOpen
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams:
+        - 
+        - No
+        byteData: 00
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000000000000100000000000000
+        paramByteDataSize: 00000000000000000000000001000000
+    - name: Open
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 380
+        y: 122
         width: 100
         height: 16
       isBreakpoint: 0
@@ -39435,6 +39477,7 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
         - HutongGames.PlayMaker.Actions.SetMaterial
         - HutongGames.PlayMaker.Actions.TweenPosition
         - HutongGames.PlayMaker.Actions.PlaySound
@@ -39442,10 +39485,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010100
-        actionIsOpen: 010101
-        actionStartIndex: 000000000300000014000000
-        actionHashCodes: 11ab5a02c1a705009cdc3905
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000030000000600000017000000
+        actionHashCodes: 27fbe10311ab5a02c1a705009cdc3905
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -39550,6 +39594,18 @@ MonoBehaviour:
           networkSync: 0
           value: 0
         fsmBoolParams:
+        - useVariable: 1
+          name: IsOpen
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -39581,13 +39637,16 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        byteData: 000000000300000000000000000000000000000000
+        byteData: 00000000000300000000000000000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000100000002000000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000140000001c000000180000000f000000
+        paramDataType: 11000000110000000100000014000000100000002000000007000000130000001c00000007000000130000001c000000140000000f0000002a000000160000000f000000110000000700000017000000020000000100000007000000140000001c000000180000000f000000
         paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
         - gameObject
         - materialIndex
         - material
@@ -39612,13 +39671,25 @@ MonoBehaviour:
         - position
         - clip
         - volume
-        paramDataPos: 00000000000000000000000000000000000000000000000004000000010000000100000001000000000000000000000000000000010000000000000008000000000000000c000000100000001100000002000000020000000100000002000000
-        paramByteDataSize: 000000000000000000000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
+        paramDataPos: 00000000010000000000000000000000000000000000000001000000000000000000000005000000010000000100000001000000000000000000000000000000010000000200000009000000000000000d000000110000001200000002000000020000000100000002000000
+        paramByteDataSize: 000000000000000001000000000000000000000000000000040000000000000000000000040000000000000000000000000000000000000000000000000000000000000000000000040000000000000004000000010000000400000000000000000000000000000000000000
     events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: Deactivate
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: false
+      isSystemEvent: 0
+      isGlobal: 0
     - name: Key1Found
       isSystemEvent: 0
       isGlobal: 1
     - name: Key2Found
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: OpenDoor
       isSystemEvent: 0
       isGlobal: 1
     - name: StartInteract
@@ -39627,21 +39698,15 @@ MonoBehaviour:
     - name: true
       isSystemEvent: 0
       isGlobal: 0
-    - name: false
+    - name: No
       isSystemEvent: 0
       isGlobal: 0
-    - name: FINISHED
-      isSystemEvent: 1
-      isGlobal: 0
-    - name: OpenDoor
-      isSystemEvent: 0
-      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: OpenDoor
         isSystemEvent: 0
         isGlobal: 1
-      toState: State 5
+      toState: IsOpen
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
